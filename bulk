@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38251a85d80acabf8077b94cd83b5c32 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_38251a85d80acabf8077b94cd83b5c32" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_38251a85d80acabf8077b94cd83b5c32 = L.map(
+                "map_38251a85d80acabf8077b94cd83b5c32",
+                {
+                    center: [65.0, 25.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_351a0e7fa380499342b778fae4e886da = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_351a0e7fa380499342b778fae4e886da.addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+            var circle_marker_25b79e686084d4830a7c208e2de9862f = L.circleMarker(
+                [60.72299419999999, 23.7892869],
+                {"bubblingMouseEvents": true, "color": "#abd600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abd600ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.205969262883098, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_605927603549a7d75d3803d1a90eb32f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b10ccc20727e2ea5da829af1bd18af6 = $(`<div id="html_7b10ccc20727e2ea5da829af1bd18af6" style="width: 100.0%; height: 100.0%;"><b>City:</b> Tammela<br><b>Location:</b> Eerikkilä pellettilämpö<br><b>Annual:</b> 825 tn.</div>`)[0];
+                popup_605927603549a7d75d3803d1a90eb32f.setContent(html_7b10ccc20727e2ea5da829af1bd18af6);
+            
+        
+
+        circle_marker_25b79e686084d4830a7c208e2de9862f.bindPopup(popup_605927603549a7d75d3803d1a90eb32f)
+        ;
+
+        
+    
+    
+            circle_marker_25b79e686084d4830a7c208e2de9862f.bindTooltip(
+                `<div>
+                     City: Tammela, Location: Eerikkilä pellettilämpö, Total: 825
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_863a0902ee993f762fadd15549015750 = L.circleMarker(
+                [63.6317759, 22.9298248],
+                {"bubblingMouseEvents": true, "color": "#002aacff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002aacff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.723408959407264, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_03cd626ef6e81be5fd7f328b927b8d00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14eed0f439c474e622f714c8b5db1e0b = $(`<div id="html_14eed0f439c474e622f714c8b5db1e0b" style="width: 100.0%; height: 100.0%;"><b>City:</b> Pedersöre<br><b>Location:</b> Ekeri Kolppi pellettilämpö<br><b>Annual:</b> 189 tn.</div>`)[0];
+                popup_03cd626ef6e81be5fd7f328b927b8d00.setContent(html_14eed0f439c474e622f714c8b5db1e0b);
+            
+        
+
+        circle_marker_863a0902ee993f762fadd15549015750.bindPopup(popup_03cd626ef6e81be5fd7f328b927b8d00)
+        ;
+
+        
+    
+    
+            circle_marker_863a0902ee993f762fadd15549015750.bindTooltip(
+                `<div>
+                     City: Pedersöre, Location: Ekeri Kolppi pellettilämpö, Total: 189
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e5618b7339910d4eafa5bbdb3fab571 = L.circleMarker(
+                [60.7905013, 23.5866212],
+                {"bubblingMouseEvents": true, "color": "#7bbd00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7bbd00ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.07761839641634, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_aff5049132a85eec648658e724b6383e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6be80eb8cc429954a55f0a71e14863fb = $(`<div id="html_6be80eb8cc429954a55f0a71e14863fb" style="width: 100.0%; height: 100.0%;"><b>City:</b> Forssa<br><b>Location:</b> Forssa voimalaitos<br><b>Annual:</b> 735 tn.</div>`)[0];
+                popup_aff5049132a85eec648658e724b6383e.setContent(html_6be80eb8cc429954a55f0a71e14863fb);
+            
+        
+
+        circle_marker_7e5618b7339910d4eafa5bbdb3fab571.bindPopup(popup_aff5049132a85eec648658e724b6383e)
+        ;
+
+        
+    
+    
+            circle_marker_7e5618b7339910d4eafa5bbdb3fab571.bindTooltip(
+                `<div>
+                     City: Forssa, Location: Forssa voimalaitos, Total: 735
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb647599478086031a2c003c9f2246d0 = L.circleMarker(
+                [64.13735729999999, 25.3669422],
+                {"bubblingMouseEvents": true, "color": "#0000ffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ffff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.18166632639171, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_87dcf0b98f24e94777a51ed9a5435896 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed30194a8cf68e6ade8478cc84720853 = $(`<div id="html_ed30194a8cf68e6ade8478cc84720853" style="width: 100.0%; height: 100.0%;"><b>City:</b> Haapavesi<br><b>Location:</b> Haapavesi voimalaitos<br><b>Annual:</b> 34 tn.</div>`)[0];
+                popup_87dcf0b98f24e94777a51ed9a5435896.setContent(html_ed30194a8cf68e6ade8478cc84720853);
+            
+        
+
+        circle_marker_eb647599478086031a2c003c9f2246d0.bindPopup(popup_87dcf0b98f24e94777a51ed9a5435896)
+        ;
+
+        
+    
+    
+            circle_marker_eb647599478086031a2c003c9f2246d0.bindTooltip(
+                `<div>
+                     City: Haapavesi, Location: Haapavesi voimalaitos, Total: 34
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eed2bc44f029daa2779ff298544694c2 = L.circleMarker(
+                [63.0338089, 23.8715517],
+                {"bubblingMouseEvents": true, "color": "#007c08ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007c08ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.626751108973185, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_65fa6d5ab2e4c5d07c3e7eefff40a8b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84acf642b09dd062c1e082e1dd37bf89 = $(`<div id="html_84acf642b09dd062c1e082e1dd37bf89" style="width: 100.0%; height: 100.0%;"><b>City:</b> Alajärvi<br><b>Location:</b> Hoisko CLT pellettilämpö<br><b>Annual:</b> 492 tn.</div>`)[0];
+                popup_65fa6d5ab2e4c5d07c3e7eefff40a8b8.setContent(html_84acf642b09dd062c1e082e1dd37bf89);
+            
+        
+
+        circle_marker_eed2bc44f029daa2779ff298544694c2.bindPopup(popup_65fa6d5ab2e4c5d07c3e7eefff40a8b8)
+        ;
+
+        
+    
+    
+            circle_marker_eed2bc44f029daa2779ff298544694c2.bindTooltip(
+                `<div>
+                     City: Alajärvi, Location: Hoisko CLT pellettilämpö, Total: 492
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86cb98502a30f648a4fcbf6676c0411e = L.circleMarker(
+                [62.9837516, 27.7299508],
+                {"bubblingMouseEvents": true, "color": "#0017d1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0017d1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.768115805072325, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_40256ec4356dd27e630ccedc88a988e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4132c4a2cd1d91d7b772ce937af2dedd = $(`<div id="html_4132c4a2cd1d91d7b772ce937af2dedd" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kuopio<br><b>Location:</b> Ingmanin koulu pellettilämpö<br><b>Annual:</b> 120 tn.</div>`)[0];
+                popup_40256ec4356dd27e630ccedc88a988e0.setContent(html_4132c4a2cd1d91d7b772ce937af2dedd);
+            
+        
+
+        circle_marker_86cb98502a30f648a4fcbf6676c0411e.bindPopup(popup_40256ec4356dd27e630ccedc88a988e0)
+        ;
+
+        
+    
+    
+            circle_marker_86cb98502a30f648a4fcbf6676c0411e.bindTooltip(
+                `<div>
+                     City: Kuopio, Location: Ingmanin koulu pellettilämpö, Total: 120
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75abedb09f7e568fb6c7297c3c52cb99 = L.circleMarker(
+                [62.54957599999999, 24.1524294],
+                {"bubblingMouseEvents": true, "color": "#1d8f00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d8f00ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.694577427581574, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_28e437f31671239e6c37d4e36f63f4f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d425bb32e395136359f284b6eb3cb39 = $(`<div id="html_8d425bb32e395136359f284b6eb3cb39" style="width: 100.0%; height: 100.0%;"><b>City:</b> Ähtäri<br><b>Location:</b> Inha pellettilämpö<br><b>Annual:</b> 562 tn.</div>`)[0];
+                popup_28e437f31671239e6c37d4e36f63f4f1.setContent(html_8d425bb32e395136359f284b6eb3cb39);
+            
+        
+
+        circle_marker_75abedb09f7e568fb6c7297c3c52cb99.bindPopup(popup_28e437f31671239e6c37d4e36f63f4f1)
+        ;
+
+        
+    
+    
+            circle_marker_75abedb09f7e568fb6c7297c3c52cb99.bindTooltip(
+                `<div>
+                     City: Ähtäri, Location: Inha pellettilämpö, Total: 562
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_083ad2f86b408cef9401360b230b55fc = L.circleMarker(
+                [68.6576419, 27.5397058],
+                {"bubblingMouseEvents": true, "color": "#007712ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007712ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.323994219652082, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_54411bcfeb868c4a5352becfc94fa418 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec79b2efc8b48a01a42bab99a679e14b = $(`<div id="html_ec79b2efc8b48a01a42bab99a679e14b" style="width: 100.0%; height: 100.0%;"><b>City:</b> Ivalo<br><b>Location:</b> Ivalon lentoasema pell.lämpö<br><b>Annual:</b> 473 tn.</div>`)[0];
+                popup_54411bcfeb868c4a5352becfc94fa418.setContent(html_ec79b2efc8b48a01a42bab99a679e14b);
+            
+        
+
+        circle_marker_083ad2f86b408cef9401360b230b55fc.bindPopup(popup_54411bcfeb868c4a5352becfc94fa418)
+        ;
+
+        
+    
+    
+            circle_marker_083ad2f86b408cef9401360b230b55fc.bindTooltip(
+                `<div>
+                     City: Ivalo, Location: Ivalon lentoasema pell.lämpö, Total: 473
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4b3244f36c54477fb5431f5a3e366c7 = L.circleMarker(
+                [62.659068, 29.6171083],
+                {"bubblingMouseEvents": true, "color": "#003f81ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003f81ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.538094246857733, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_3ff0d44cde70f8c5d191c253bfa0d9f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff4baae6c76b0de6487b0f3c0d1ef08a = $(`<div id="html_ff4baae6c76b0de6487b0f3c0d1ef08a" style="width: 100.0%; height: 100.0%;"><b>City:</b> Joensuu<br><b>Location:</b> Joensuun lentoasema pell.lämpö<br><b>Annual:</b> 267 tn.</div>`)[0];
+                popup_3ff0d44cde70f8c5d191c253bfa0d9f6.setContent(html_ff4baae6c76b0de6487b0f3c0d1ef08a);
+            
+        
+
+        circle_marker_e4b3244f36c54477fb5431f5a3e366c7.bindPopup(popup_3ff0d44cde70f8c5d191c253bfa0d9f6)
+        ;
+
+        
+    
+    
+            circle_marker_e4b3244f36c54477fb5431f5a3e366c7.bindTooltip(
+                `<div>
+                     City: Joensuu, Location: Joensuun lentoasema pell.lämpö, Total: 267
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c38daaa0cee5df48d78b6bc3c15e8a8b = L.circleMarker(
+                [62.4033514, 25.6808612],
+                {"bubblingMouseEvents": true, "color": "#006a2aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006a2aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.58171260590404, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_2472705c506f7e41d4bef47dca50b164 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f864de0f9fd5ef80ca4f67dd192f8e16 = $(`<div id="html_f864de0f9fd5ef80ca4f67dd192f8e16" style="width: 100.0%; height: 100.0%;"><b>City:</b> Jyväskylä<br><b>Location:</b> Jyväskylä lentoasema pell.lämpö<br><b>Annual:</b> 428 tn.</div>`)[0];
+                popup_2472705c506f7e41d4bef47dca50b164.setContent(html_f864de0f9fd5ef80ca4f67dd192f8e16);
+            
+        
+
+        circle_marker_c38daaa0cee5df48d78b6bc3c15e8a8b.bindPopup(popup_2472705c506f7e41d4bef47dca50b164)
+        ;
+
+        
+    
+    
+            circle_marker_c38daaa0cee5df48d78b6bc3c15e8a8b.bindTooltip(
+                `<div>
+                     City: Jyväskylä, Location: Jyväskylä lentoasema pell.lämpö, Total: 428
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_503c16058db5f82538da3fce2af9d8cc = L.circleMarker(
+                [64.1306547, 28.3904979],
+                {"bubblingMouseEvents": true, "color": "#00613eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00613eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.95929291125633, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_56f2ee2d6bb465a0d0e4b1934d715e92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_274afd1caaeb42133eebdc3e502fd0f7 = $(`<div id="html_274afd1caaeb42133eebdc3e502fd0f7" style="width: 100.0%; height: 100.0%;"><b>City:</b> Sotkamo<br><b>Location:</b> Kainuun opisto pellettilämpö<br><b>Annual:</b> 392 tn.</div>`)[0];
+                popup_56f2ee2d6bb465a0d0e4b1934d715e92.setContent(html_274afd1caaeb42133eebdc3e502fd0f7);
+            
+        
+
+        circle_marker_503c16058db5f82538da3fce2af9d8cc.bindPopup(popup_56f2ee2d6bb465a0d0e4b1934d715e92)
+        ;
+
+        
+    
+    
+            circle_marker_503c16058db5f82538da3fce2af9d8cc.bindTooltip(
+                `<div>
+                     City: Sotkamo, Location: Kainuun opisto pellettilämpö, Total: 392
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61290a80485cb48630ac8e1e35949413 = L.circleMarker(
+                [64.28120150000001, 27.6754929],
+                {"bubblingMouseEvents": true, "color": "#003497ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003497ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.646563421323554, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_18d61788e242d474aa3d100abaa04f7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27a1fd486da068e406a9663ca00098f9 = $(`<div id="html_27a1fd486da068e406a9663ca00098f9" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kajaani<br><b>Location:</b> Kajaanin lentoasema pell.lämpö<br><b>Annual:</b> 227 tn.</div>`)[0];
+                popup_18d61788e242d474aa3d100abaa04f7d.setContent(html_27a1fd486da068e406a9663ca00098f9);
+            
+        
+
+        circle_marker_61290a80485cb48630ac8e1e35949413.bindPopup(popup_18d61788e242d474aa3d100abaa04f7d)
+        ;
+
+        
+    
+    
+            circle_marker_61290a80485cb48630ac8e1e35949413.bindTooltip(
+                `<div>
+                     City: Kajaani, Location: Kajaanin lentoasema pell.lämpö, Total: 227
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05c33d1b366ddae63f7152bc15a59de5 = L.circleMarker(
+                [65.7808945, 24.5760499],
+                {"bubblingMouseEvents": true, "color": "#001cc6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#001cc6ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.382511696339462, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_340e9d5887697994cc5f61a63a62ffd6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_932c4f3cf00bc2f6bf469ac487662f1f = $(`<div id="html_932c4f3cf00bc2f6bf469ac487662f1f" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kemi<br><b>Location:</b> Kemin lentoasema pell.lämpö<br><b>Annual:</b> 140 tn.</div>`)[0];
+                popup_340e9d5887697994cc5f61a63a62ffd6.setContent(html_932c4f3cf00bc2f6bf469ac487662f1f);
+            
+        
+
+        circle_marker_05c33d1b366ddae63f7152bc15a59de5.bindPopup(popup_340e9d5887697994cc5f61a63a62ffd6)
+        ;
+
+        
+    
+    
+            circle_marker_05c33d1b366ddae63f7152bc15a59de5.bindTooltip(
+                `<div>
+                     City: Kemi, Location: Kemin lentoasema pell.lämpö, Total: 140
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f4ebf013228735f6a01285393a445f0 = L.circleMarker(
+                [63.7188689, 23.1342221],
+                {"bubblingMouseEvents": true, "color": "#0020beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0020beff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.814929718592111, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_d51d274ca0e559663bb59db7a5c16f87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8acd9c27a68f1a328173c7a50a7cced3 = $(`<div id="html_8acd9c27a68f1a328173c7a50a7cced3" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kruunupyy<br><b>Location:</b> Kruunupyyn lentoasema pell.läm<br><b>Annual:</b> 155 tn.</div>`)[0];
+                popup_d51d274ca0e559663bb59db7a5c16f87.setContent(html_8acd9c27a68f1a328173c7a50a7cced3);
+            
+        
+
+        circle_marker_0f4ebf013228735f6a01285393a445f0.bindPopup(popup_d51d274ca0e559663bb59db7a5c16f87)
+        ;
+
+        
+    
+    
+            circle_marker_0f4ebf013228735f6a01285393a445f0.bindTooltip(
+                `<div>
+                     City: Kruunupyy, Location: Kruunupyyn lentoasema pell.läm, Total: 155
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d06c2d29fe94865ae874e833f8cfe28b = L.circleMarker(
+                [62.3743922, 25.9594416],
+                {"bubblingMouseEvents": true, "color": "#002ca6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002ca6ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.974715185766119, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_97f2db1b962e44c2394a2c2f8a71af6d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc494517f8fe6d7839b4bf49e8c2fc89 = $(`<div id="html_fc494517f8fe6d7839b4bf49e8c2fc89" style="width: 100.0%; height: 100.0%;"><b>City:</b> Laukaa<br><b>Location:</b> Kuhankoski KL pell.lämpö<br><b>Annual:</b> 199 tn.</div>`)[0];
+                popup_97f2db1b962e44c2394a2c2f8a71af6d.setContent(html_fc494517f8fe6d7839b4bf49e8c2fc89);
+            
+        
+
+        circle_marker_d06c2d29fe94865ae874e833f8cfe28b.bindPopup(popup_97f2db1b962e44c2394a2c2f8a71af6d)
+        ;
+
+        
+    
+    
+            circle_marker_d06c2d29fe94865ae874e833f8cfe28b.bindTooltip(
+                `<div>
+                     City: Laukaa, Location: Kuhankoski KL pell.lämpö, Total: 199
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56f46e470ef38c84e6b59710e2b67cf9 = L.circleMarker(
+                [63.0036034, 27.7977861],
+                {"bubblingMouseEvents": true, "color": "#239200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#239200ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.856192885020153, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_d53cfe74f5c5e3638dc96776c6ca7a36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc5524a300e47cb4e2e1d1bc94eaf5bc = $(`<div id="html_fc5524a300e47cb4e2e1d1bc94eaf5bc" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kuopio<br><b>Location:</b> Kuopion lentoasema pell.lämpö<br><b>Annual:</b> 573 tn.</div>`)[0];
+                popup_d53cfe74f5c5e3638dc96776c6ca7a36.setContent(html_fc5524a300e47cb4e2e1d1bc94eaf5bc);
+            
+        
+
+        circle_marker_56f46e470ef38c84e6b59710e2b67cf9.bindPopup(popup_d53cfe74f5c5e3638dc96776c6ca7a36)
+        ;
+
+        
+    
+    
+            circle_marker_56f46e470ef38c84e6b59710e2b67cf9.bindTooltip(
+                `<div>
+                     City: Kuopio, Location: Kuopion lentoasema pell.lämpö, Total: 573
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ba955720b1e00dc533a49a532c1e2fe = L.circleMarker(
+                [65.99620329999999, 29.2270831],
+                {"bubblingMouseEvents": true, "color": "#00437aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00437aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.834138229968147, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_ed717c14bd296fb2f6180732a826f03f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95cc441b340b40b456780c8bc8cdda6c = $(`<div id="html_95cc441b340b40b456780c8bc8cdda6c" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kuusamo<br><b>Location:</b> Kuusamon lentoasema pell.lämpö<br><b>Annual:</b> 281 tn.</div>`)[0];
+                popup_ed717c14bd296fb2f6180732a826f03f.setContent(html_95cc441b340b40b456780c8bc8cdda6c);
+            
+        
+
+        circle_marker_1ba955720b1e00dc533a49a532c1e2fe.bindPopup(popup_ed717c14bd296fb2f6180732a826f03f)
+        ;
+
+        
+    
+    
+            circle_marker_1ba955720b1e00dc533a49a532c1e2fe.bindTooltip(
+                `<div>
+                     City: Kuusamo, Location: Kuusamon lentoasema pell.lämpö, Total: 281
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bcaf28bbd2e279d1fd84e94795bf20c0 = L.circleMarker(
+                [66.0805024, 24.8109033],
+                {"bubblingMouseEvents": true, "color": "#00417eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00417eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.687061750072793, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_502e68612e4b51ed4c4e0d5adb126d42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8533f3214c0b0fabdb16f4f0c3990ec = $(`<div id="html_b8533f3214c0b0fabdb16f4f0c3990ec" style="width: 100.0%; height: 100.0%;"><b>City:</b> Tervola<br><b>Location:</b> Loue pellettilämpö<br><b>Annual:</b> 274 tn.</div>`)[0];
+                popup_502e68612e4b51ed4c4e0d5adb126d42.setContent(html_b8533f3214c0b0fabdb16f4f0c3990ec);
+            
+        
+
+        circle_marker_bcaf28bbd2e279d1fd84e94795bf20c0.bindPopup(popup_502e68612e4b51ed4c4e0d5adb126d42)
+        ;
+
+        
+    
+    
+            circle_marker_bcaf28bbd2e279d1fd84e94795bf20c0.bindTooltip(
+                `<div>
+                     City: Tervola, Location: Loue pellettilämpö, Total: 274
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_904c4de0d2d8735cd3fede1d913fcfd7 = L.circleMarker(
+                [67.1333333, 26.9],
+                {"bubblingMouseEvents": true, "color": "#00603fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00603fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.906158046321213, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_53e159d048ddde19aeda9a8024322f54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63e93670fd81863613a6727bf0e8bcf5 = $(`<div id="html_63e93670fd81863613a6727bf0e8bcf5" style="width: 100.0%; height: 100.0%;"><b>City:</b> Luosto<br><b>Location:</b> Luoston pellettilämpölaitos<br><b>Annual:</b> 389 tn.</div>`)[0];
+                popup_53e159d048ddde19aeda9a8024322f54.setContent(html_63e93670fd81863613a6727bf0e8bcf5);
+            
+        
+
+        circle_marker_904c4de0d2d8735cd3fede1d913fcfd7.bindPopup(popup_53e159d048ddde19aeda9a8024322f54)
+        ;
+
+        
+    
+    
+            circle_marker_904c4de0d2d8735cd3fede1d913fcfd7.bindTooltip(
+                `<div>
+                     City: Luosto, Location: Luoston pellettilämpölaitos, Total: 389
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da6f92c4c656e474abcf05f6e1878fe7 = L.circleMarker(
+                [61.7021881, 23.7992779],
+                {"bubblingMouseEvents": true, "color": "#006535ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006535ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.23930691370691, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_9edbc4e3b42c736f41562327bea4bffd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c155567f569c0e53136fa9fd4c4374e = $(`<div id="html_0c155567f569c0e53136fa9fd4c4374e" style="width: 100.0%; height: 100.0%;"><b>City:</b> Tampere<br><b>Location:</b> Murikka-Opiston pellettilämpö<br><b>Annual:</b> 408 tn.</div>`)[0];
+                popup_9edbc4e3b42c736f41562327bea4bffd.setContent(html_0c155567f569c0e53136fa9fd4c4374e);
+            
+        
+
+        circle_marker_da6f92c4c656e474abcf05f6e1878fe7.bindPopup(popup_9edbc4e3b42c736f41562327bea4bffd)
+        ;
+
+        
+    
+    
+            circle_marker_da6f92c4c656e474abcf05f6e1878fe7.bindTooltip(
+                `<div>
+                     City: Tampere, Location: Murikka-Opiston pellettilämpö, Total: 408
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1101e1d3bed194ec4847dc948eae167 = L.circleMarker(
+                [62.1291562, 25.6758771],
+                {"bubblingMouseEvents": true, "color": "#ff9d00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9d00ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.002230390805888, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_ecbf83bbb59363e19116e3ab70493f8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93abf1c290268a370fb8c926df9219ef = $(`<div id="html_93abf1c290268a370fb8c926df9219ef" style="width: 100.0%; height: 100.0%;"><b>City:</b> Muurame<br><b>Location:</b> Muurame teoll.alue KL pell.lämpö<br><b>Annual:</b> 1477 tn.</div>`)[0];
+                popup_ecbf83bbb59363e19116e3ab70493f8f.setContent(html_93abf1c290268a370fb8c926df9219ef);
+            
+        
+
+        circle_marker_a1101e1d3bed194ec4847dc948eae167.bindPopup(popup_ecbf83bbb59363e19116e3ab70493f8f)
+        ;
+
+        
+    
+    
+            circle_marker_a1101e1d3bed194ec4847dc948eae167.bindTooltip(
+                `<div>
+                     City: Muurame, Location: Muurame teoll.alue KL pell.lämpö, Total: 1477
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_451915a4ce75f26d82cfd48c2ebfd9fb = L.circleMarker(
+                [60.67833530000001, 21.988606],
+                {"bubblingMouseEvents": true, "color": "#007711ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007711ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.340078739954066, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_5d440a39d818648fb251847dcdcb3c0b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c918c3811c4ec0c7eb52b8ab44beaf2 = $(`<div id="html_4c918c3811c4ec0c7eb52b8ab44beaf2" style="width: 100.0%; height: 100.0%;"><b>City:</b> Mynämäki<br><b>Location:</b> Mynämäki KL lämpölaitos<br><b>Annual:</b> 474 tn.</div>`)[0];
+                popup_5d440a39d818648fb251847dcdcb3c0b.setContent(html_4c918c3811c4ec0c7eb52b8ab44beaf2);
+            
+        
+
+        circle_marker_451915a4ce75f26d82cfd48c2ebfd9fb.bindPopup(popup_5d440a39d818648fb251847dcdcb3c0b)
+        ;
+
+        
+    
+    
+            circle_marker_451915a4ce75f26d82cfd48c2ebfd9fb.bindTooltip(
+                `<div>
+                     City: Mynämäki, Location: Mynämäki KL lämpölaitos, Total: 474
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_908ba0c9472d386961ff0b2cf38386b3 = L.circleMarker(
+                [62.89851479999999, 27.8508775],
+                {"bubblingMouseEvents": true, "color": "#006634ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006634ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.291194452899305, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_60411e40679bef3edd488a1854167fef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd63893515db4438c44323f9e31dc787 = $(`<div id="html_dd63893515db4438c44323f9e31dc787" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kuopio<br><b>Location:</b> Neuron Kortejoki pell.lämpö<br><b>Annual:</b> 411 tn.</div>`)[0];
+                popup_60411e40679bef3edd488a1854167fef.setContent(html_dd63893515db4438c44323f9e31dc787);
+            
+        
+
+        circle_marker_908ba0c9472d386961ff0b2cf38386b3.bindPopup(popup_60411e40679bef3edd488a1854167fef)
+        ;
+
+        
+    
+    
+            circle_marker_908ba0c9472d386961ff0b2cf38386b3.bindTooltip(
+                `<div>
+                     City: Kuopio, Location: Neuron Kortejoki pell.lämpö, Total: 411
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e77685f16c0262c87ae4c37064ddfd9 = L.circleMarker(
+                [60.29335239999999, 25.0377686],
+                {"bubblingMouseEvents": true, "color": "#0020bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0020bfff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.7867715521936, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_0494d70e2f1f8b5c26a965d6222746c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a9582f088bfa0d12954997970f2b430 = $(`<div id="html_1a9582f088bfa0d12954997970f2b430" style="width: 100.0%; height: 100.0%;"><b>City:</b> Vantaa<br><b>Location:</b> Nurmi Hydraulics pellettilämpö<br><b>Annual:</b> 154 tn.</div>`)[0];
+                popup_0494d70e2f1f8b5c26a965d6222746c2.setContent(html_1a9582f088bfa0d12954997970f2b430);
+            
+        
+
+        circle_marker_0e77685f16c0262c87ae4c37064ddfd9.bindPopup(popup_0494d70e2f1f8b5c26a965d6222746c2)
+        ;
+
+        
+    
+    
+            circle_marker_0e77685f16c0262c87ae4c37064ddfd9.bindTooltip(
+                `<div>
+                     City: Vantaa, Location: Nurmi Hydraulics pellettilämpö, Total: 154
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0050bbecfda0b1804589916a6f1b80f7 = L.circleMarker(
+                [63.51877810000001, 27.2437114],
+                {"bubblingMouseEvents": true, "color": "#2e9700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2e9700ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.14611392664029, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_56f6cd8f40df2357f42c954cdf4674df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4a6aa4cc9da8307d6099295497a3759 = $(`<div id="html_b4a6aa4cc9da8307d6099295497a3759" style="width: 100.0%; height: 100.0%;"><b>City:</b> Iisalmi<br><b>Location:</b> Peltosalmi Iisalmi pell.lämpö<br><b>Annual:</b> 593 tn.</div>`)[0];
+                popup_56f6cd8f40df2357f42c954cdf4674df.setContent(html_b4a6aa4cc9da8307d6099295497a3759);
+            
+        
+
+        circle_marker_0050bbecfda0b1804589916a6f1b80f7.bindPopup(popup_56f6cd8f40df2357f42c954cdf4674df)
+        ;
+
+        
+    
+    
+            circle_marker_0050bbecfda0b1804589916a6f1b80f7.bindTooltip(
+                `<div>
+                     City: Iisalmi, Location: Peltosalmi Iisalmi pell.lämpö, Total: 593
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ff630ef49f55c749cb29a141e754d1e0 = L.circleMarker(
+                [59.8465035, 22.9907617],
+                {"bubblingMouseEvents": true, "color": "#003791ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#003791ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.921737383618215, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_ac8d442608cf95bf9dd57e23a8060ba9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d9a0f74c6638e0dc5a0be9cfa2587f5 = $(`<div id="html_1d9a0f74c6638e0dc5a0be9cfa2587f5" style="width: 100.0%; height: 100.0%;"><b>City:</b> Hanko<br><b>Location:</b> Printal Hanko pellettilämpö<br><b>Annual:</b> 239 tn.</div>`)[0];
+                popup_ac8d442608cf95bf9dd57e23a8060ba9.setContent(html_1d9a0f74c6638e0dc5a0be9cfa2587f5);
+            
+        
+
+        circle_marker_ff630ef49f55c749cb29a141e754d1e0.bindPopup(popup_ac8d442608cf95bf9dd57e23a8060ba9)
+        ;
+
+        
+    
+    
+            circle_marker_ff630ef49f55c749cb29a141e754d1e0.bindTooltip(
+                `<div>
+                     City: Hanko, Location: Printal Hanko pellettilämpö, Total: 239
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f196f1741b685a9a8299370533b09c17 = L.circleMarker(
+                [65.0120888, 25.4650773],
+                {"bubblingMouseEvents": true, "color": "#00319cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00319cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.43537614216338, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_ad30a183258edb8cfcc68608d87c57ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12590ae0dfc5b7f299febaa0ea29caf0 = $(`<div id="html_12590ae0dfc5b7f299febaa0ea29caf0" style="width: 100.0%; height: 100.0%;"><b>City:</b> Oulu<br><b>Location:</b> Rajaville pellettilämpö Oulu<br><b>Annual:</b> 218 tn.</div>`)[0];
+                popup_ad30a183258edb8cfcc68608d87c57ac.setContent(html_12590ae0dfc5b7f299febaa0ea29caf0);
+            
+        
+
+        circle_marker_f196f1741b685a9a8299370533b09c17.bindPopup(popup_ad30a183258edb8cfcc68608d87c57ac)
+        ;
+
+        
+    
+    
+            circle_marker_f196f1741b685a9a8299370533b09c17.bindTooltip(
+                `<div>
+                     City: Oulu, Location: Rajaville pellettilämpö Oulu, Total: 218
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01313ff174a35d3efefbc593ae64630f = L.circleMarker(
+                [62.5430557, 29.8406762],
+                {"bubblingMouseEvents": true, "color": "#349a00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#349a00ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.31772342674838, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_bee487465b5a904ff2ff931624ef675a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20858ef1c6263fbe4ad44e873dbc3878 = $(`<div id="html_20858ef1c6263fbe4ad44e873dbc3878" style="width: 100.0%; height: 100.0%;"><b>City:</b> Joensuu<br><b>Location:</b> Reijola KL pellettilämpö<br><b>Annual:</b> 605 tn.</div>`)[0];
+                popup_bee487465b5a904ff2ff931624ef675a.setContent(html_20858ef1c6263fbe4ad44e873dbc3878);
+            
+        
+
+        circle_marker_01313ff174a35d3efefbc593ae64630f.bindPopup(popup_bee487465b5a904ff2ff931624ef675a)
+        ;
+
+        
+    
+    
+            circle_marker_01313ff174a35d3efefbc593ae64630f.bindTooltip(
+                `<div>
+                     City: Joensuu, Location: Reijola KL pellettilämpö, Total: 605
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49ad9e5d489910a22ffbc9039684327f = L.circleMarker(
+                [60.37101380000001, 24.8081914],
+                {"bubblingMouseEvents": true, "color": "#00319cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00319cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.43537614216338, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_e9a002c6ff858685f8dbc5a010d62464 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bda60e7a3dac24a5a1b748148c7eb8c1 = $(`<div id="html_bda60e7a3dac24a5a1b748148c7eb8c1" style="width: 100.0%; height: 100.0%;"><b>City:</b> Vantaa<br><b>Location:</b> Semaster Vantaa pellettilämpö<br><b>Annual:</b> 218 tn.</div>`)[0];
+                popup_e9a002c6ff858685f8dbc5a010d62464.setContent(html_bda60e7a3dac24a5a1b748148c7eb8c1);
+            
+        
+
+        circle_marker_49ad9e5d489910a22ffbc9039684327f.bindPopup(popup_e9a002c6ff858685f8dbc5a010d62464)
+        ;
+
+        
+    
+    
+            circle_marker_49ad9e5d489910a22ffbc9039684327f.bindTooltip(
+                `<div>
+                     City: Vantaa, Location: Semaster Vantaa pellettilämpö, Total: 218
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e86bf998f2f0fa8f2d97e867fb58b17 = L.circleMarker(
+                [60.3257299, 24.7405457],
+                {"bubblingMouseEvents": true, "color": "#ffc000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc000ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.48405011025624, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_a7b17d530fb448d9ac169988339714cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc5ecb120ec38efad99b1bb38b36b754 = $(`<div id="html_fc5ecb120ec38efad99b1bb38b36b754" style="width: 100.0%; height: 100.0%;"><b>City:</b> Vantaa<br><b>Location:</b> Serena kylpylä pellettilämpö<br><b>Annual:</b> 1315 tn.</div>`)[0];
+                popup_a7b17d530fb448d9ac169988339714cd.setContent(html_fc5ecb120ec38efad99b1bb38b36b754);
+            
+        
+
+        circle_marker_6e86bf998f2f0fa8f2d97e867fb58b17.bindPopup(popup_a7b17d530fb448d9ac169988339714cd)
+        ;
+
+        
+    
+    
+            circle_marker_6e86bf998f2f0fa8f2d97e867fb58b17.bindTooltip(
+                `<div>
+                     City: Vantaa, Location: Serena kylpylä pellettilämpö, Total: 1315
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f203725b7bdd952cd34755a513fb8545 = L.circleMarker(
+                [64.2684615, 25.8668271],
+                {"bubblingMouseEvents": true, "color": "#002ba9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002ba9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.82471079261486, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_5352d7638c27f2f35f3104cb80ef164d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0c121840295da8e81e38edcb4633eb1 = $(`<div id="html_a0c121840295da8e81e38edcb4633eb1" style="width: 100.0%; height: 100.0%;"><b>City:</b> Pulkkila<br><b>Location:</b> Siikalatva Pulkkila lämpölaitos<br><b>Annual:</b> 193 tn.</div>`)[0];
+                popup_5352d7638c27f2f35f3104cb80ef164d.setContent(html_a0c121840295da8e81e38edcb4633eb1);
+            
+        
+
+        circle_marker_f203725b7bdd952cd34755a513fb8545.bindPopup(popup_5352d7638c27f2f35f3104cb80ef164d)
+        ;
+
+        
+    
+    
+            circle_marker_f203725b7bdd952cd34755a513fb8545.bindTooltip(
+                `<div>
+                     City: Pulkkila, Location: Siikalatva Pulkkila lämpölaitos, Total: 193
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81a92f961bdee393e317f2a683bbe5f2 = L.circleMarker(
+                [60.29335239999999, 25.0377686],
+                {"bubblingMouseEvents": true, "color": "#000ce7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000ce7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.321736092120911, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_e54ea98cc5b1eec9ab3cc8e80dc500d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31ffc99fc6d0f69d6f165de5793af03a = $(`<div id="html_31ffc99fc6d0f69d6f165de5793af03a" style="width: 100.0%; height: 100.0%;"><b>City:</b> Vantaa<br><b>Location:</b> Siikaranta pellettilämpö<br><b>Annual:</b> 79 tn.</div>`)[0];
+                popup_e54ea98cc5b1eec9ab3cc8e80dc500d8.setContent(html_31ffc99fc6d0f69d6f165de5793af03a);
+            
+        
+
+        circle_marker_81a92f961bdee393e317f2a683bbe5f2.bindPopup(popup_e54ea98cc5b1eec9ab3cc8e80dc500d8)
+        ;
+
+        
+    
+    
+            circle_marker_81a92f961bdee393e317f2a683bbe5f2.bindTooltip(
+                `<div>
+                     City: Vantaa, Location: Siikaranta pellettilämpö, Total: 79
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d824170336c0001a3d8f761a51cb9cf = L.circleMarker(
+                [60.8090847, 23.7690129],
+                {"bubblingMouseEvents": true, "color": "#fff600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff600ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.565529150233697, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_d10116e8975742254e6628ff2f4d487d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c3c31682044d1967fabc387949f35ed = $(`<div id="html_2c3c31682044d1967fabc387949f35ed" style="width: 100.0%; height: 100.0%;"><b>City:</b> Tammela<br><b>Location:</b> Tammela pellettilämpö<br><b>Annual:</b> 1030 tn.</div>`)[0];
+                popup_d10116e8975742254e6628ff2f4d487d.setContent(html_2c3c31682044d1967fabc387949f35ed);
+            
+        
+
+        circle_marker_2d824170336c0001a3d8f761a51cb9cf.bindPopup(popup_d10116e8975742254e6628ff2f4d487d)
+        ;
+
+        
+    
+    
+            circle_marker_2d824170336c0001a3d8f761a51cb9cf.bindTooltip(
+                `<div>
+                     City: Tammela, Location: Tammela pellettilämpö, Total: 1030
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_efe3b5893553d5b888f6d2a4dbe432ba = L.circleMarker(
+                [62.9883616, 27.7304779],
+                {"bubblingMouseEvents": true, "color": "#005c47ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#005c47ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.655441711725958, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_69373c56334eaf8a26c7709604ea19f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_579a8a022d5c4bc468751f233aaa2a79 = $(`<div id="html_579a8a022d5c4bc468751f233aaa2a79" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kuopio<br><b>Location:</b> Toivalan koulu pellettilämpö<br><b>Annual:</b> 375 tn.</div>`)[0];
+                popup_69373c56334eaf8a26c7709604ea19f8.setContent(html_579a8a022d5c4bc468751f233aaa2a79);
+            
+        
+
+        circle_marker_efe3b5893553d5b888f6d2a4dbe432ba.bindPopup(popup_69373c56334eaf8a26c7709604ea19f8)
+        ;
+
+        
+    
+    
+            circle_marker_efe3b5893553d5b888f6d2a4dbe432ba.bindTooltip(
+                `<div>
+                     City: Kuopio, Location: Toivalan koulu pellettilämpö, Total: 375
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abb53535639b07be4ed314525de9ec27 = L.circleMarker(
+                [64.2221775, 27.7278497],
+                {"bubblingMouseEvents": true, "color": "#ff8800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8800ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.53428511917159, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_710ac8bf609a17b907cdb28d9908c16a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7605298f97e23b6dbf231d4b395215f = $(`<div id="html_f7605298f97e23b6dbf231d4b395215f" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kajaani<br><b>Location:</b> Transtec Kajaani pellettilämpö<br><b>Annual:</b> 1536 tn.</div>`)[0];
+                popup_710ac8bf609a17b907cdb28d9908c16a.setContent(html_f7605298f97e23b6dbf231d4b395215f);
+            
+        
+
+        circle_marker_abb53535639b07be4ed314525de9ec27.bindPopup(popup_710ac8bf609a17b907cdb28d9908c16a)
+        ;
+
+        
+    
+    
+            circle_marker_abb53535639b07be4ed314525de9ec27.bindTooltip(
+                `<div>
+                     City: Kajaani, Location: Transtec Kajaani pellettilämpö, Total: 1536
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7ae125436693e3e7d3da96dd70aac16 = L.circleMarker(
+                [64.76239269999999, 26.4205628],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.828325694707154, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_bd1e882c05701c3c950fe932cb36d449 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8043465ea579a3e008d18b4e67b6c02c = $(`<div id="html_8043465ea579a3e008d18b4e67b6c02c" style="width: 100.0%; height: 100.0%;"><b>City:</b> Utajärvi<br><b>Location:</b> Utajärvi KL lämpölaitos<br><b>Annual:</b> 1927 tn.</div>`)[0];
+                popup_bd1e882c05701c3c950fe932cb36d449.setContent(html_8043465ea579a3e008d18b4e67b6c02c);
+            
+        
+
+        circle_marker_a7ae125436693e3e7d3da96dd70aac16.bindPopup(popup_bd1e882c05701c3c950fe932cb36d449)
+        ;
+
+        
+    
+    
+            circle_marker_a7ae125436693e3e7d3da96dd70aac16.bindTooltip(
+                `<div>
+                     City: Utajärvi, Location: Utajärvi KL lämpölaitos, Total: 1927
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1c305dadd276e01b7f8fcadfb5fbe27 = L.circleMarker(
+                [60.88216899999999, 26.9238067],
+                {"bubblingMouseEvents": true, "color": "#001acaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#001acaff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.172793816269557, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_fdaf5bdbda35ecd956ee272d0ea73074 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5583b343d7a5ac1ebba84b4ace066f05 = $(`<div id="html_5583b343d7a5ac1ebba84b4ace066f05" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kouvola<br><b>Location:</b> Utti lämpölaitos<br><b>Annual:</b> 133 tn.</div>`)[0];
+                popup_fdaf5bdbda35ecd956ee272d0ea73074.setContent(html_5583b343d7a5ac1ebba84b4ace066f05);
+            
+        
+
+        circle_marker_d1c305dadd276e01b7f8fcadfb5fbe27.bindPopup(popup_fdaf5bdbda35ecd956ee272d0ea73074)
+        ;
+
+        
+    
+    
+            circle_marker_d1c305dadd276e01b7f8fcadfb5fbe27.bindTooltip(
+                `<div>
+                     City: Kouvola, Location: Utti lämpölaitos, Total: 133
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7255aa650beedd4d5750fdd50aacc670 = L.circleMarker(
+                [63.04358879999999, 21.760469],
+                {"bubblingMouseEvents": true, "color": "#008000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.8771987374185, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_f4acc0f6795516ddd78020cb46441674 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c9fa2c7f3417d4e967bf8000dbc0c76 = $(`<div id="html_9c9fa2c7f3417d4e967bf8000dbc0c76" style="width: 100.0%; height: 100.0%;"><b>City:</b> Vaasa<br><b>Location:</b> Vaasan lentoasema pell.lämpö<br><b>Annual:</b> 508 tn.</div>`)[0];
+                popup_f4acc0f6795516ddd78020cb46441674.setContent(html_9c9fa2c7f3417d4e967bf8000dbc0c76);
+            
+        
+
+        circle_marker_7255aa650beedd4d5750fdd50aacc670.bindPopup(popup_f4acc0f6795516ddd78020cb46441674)
+        ;
+
+        
+    
+    
+            circle_marker_7255aa650beedd4d5750fdd50aacc670.bindTooltip(
+                `<div>
+                     City: Vaasa, Location: Vaasan lentoasema pell.lämpö, Total: 508
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b19313f8a4323f98ef36f197843c3837 = L.circleMarker(
+                [62.7607873, 28.0293952],
+                {"bubblingMouseEvents": true, "color": "#a2d100ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a2d100ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.985421795878505, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_367a6ff8cab46155e07dc6bfd2108fc0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd6ac5ccde9b05cbb58c01d1f4be663f = $(`<div id="html_cd6ac5ccde9b05cbb58c01d1f4be663f" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kuopio<br><b>Location:</b> Vehmersalmi pellettilämpö<br><b>Annual:</b> 807 tn.</div>`)[0];
+                popup_367a6ff8cab46155e07dc6bfd2108fc0.setContent(html_cd6ac5ccde9b05cbb58c01d1f4be663f);
+            
+        
+
+        circle_marker_b19313f8a4323f98ef36f197843c3837.bindPopup(popup_367a6ff8cab46155e07dc6bfd2108fc0)
+        ;
+
+        
+    
+    
+            circle_marker_b19313f8a4323f98ef36f197843c3837.bindTooltip(
+                `<div>
+                     City: Kuopio, Location: Vehmersalmi pellettilämpö, Total: 807
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a727c156c94492107926a16ae1df15c = L.circleMarker(
+                [61.11247969999999, 27.0092959],
+                {"bubblingMouseEvents": true, "color": "#005a4bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#005a4bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.510070842467611, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_4f4f1e6098a49777ffb3ca763e8dedac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d927c965aa8737a6c1848509b2cc8311 = $(`<div id="html_d927c965aa8737a6c1848509b2cc8311" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kouvola<br><b>Location:</b> Vekaranjärvi lämpölaitos<br><b>Annual:</b> 367 tn.</div>`)[0];
+                popup_4f4f1e6098a49777ffb3ca763e8dedac.setContent(html_d927c965aa8737a6c1848509b2cc8311);
+            
+        
+
+        circle_marker_0a727c156c94492107926a16ae1df15c.bindPopup(popup_4f4f1e6098a49777ffb3ca763e8dedac)
+        ;
+
+        
+    
+    
+            circle_marker_0a727c156c94492107926a16ae1df15c.bindTooltip(
+                `<div>
+                     City: Kouvola, Location: Vekaranjärvi lämpölaitos, Total: 367
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7bb9993333d059d3f309e04147be6563 = L.circleMarker(
+                [62.3682548, 25.9022544],
+                {"bubblingMouseEvents": true, "color": "#007c08ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007c08ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.610963864312236, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_65b62bf7f8053d714d85cddbb183affe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28175587cc76d02d790566c93662b431 = $(`<div id="html_28175587cc76d02d790566c93662b431" style="width: 100.0%; height: 100.0%;"><b>City:</b> Laukaa<br><b>Location:</b> Vihtavuori KL pell.lämpö<br><b>Annual:</b> 491 tn.</div>`)[0];
+                popup_65b62bf7f8053d714d85cddbb183affe.setContent(html_28175587cc76d02d790566c93662b431);
+            
+        
+
+        circle_marker_7bb9993333d059d3f309e04147be6563.bindPopup(popup_65b62bf7f8053d714d85cddbb183affe)
+        ;
+
+        
+    
+    
+            circle_marker_7bb9993333d059d3f309e04147be6563.bindTooltip(
+                `<div>
+                     City: Laukaa, Location: Vihtavuori KL pell.lämpö, Total: 491
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f37f9c110d2b87246c1f12d38bf30aeb = L.circleMarker(
+                [63.10119710000001, 23.0650223],
+                {"bubblingMouseEvents": true, "color": "#006535ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006535ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.25662389130968, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_85e4cec2ada095e7452e7e28d6b8f337 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4afd8ff3b6fb0f840674214e5599f3ac = $(`<div id="html_4afd8ff3b6fb0f840674214e5599f3ac" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kauhava<br><b>Location:</b> Yhteisporsas Jakkula pellettilämpö<br><b>Annual:</b> 409 tn.</div>`)[0];
+                popup_85e4cec2ada095e7452e7e28d6b8f337.setContent(html_4afd8ff3b6fb0f840674214e5599f3ac);
+            
+        
+
+        circle_marker_f37f9c110d2b87246c1f12d38bf30aeb.bindPopup(popup_85e4cec2ada095e7452e7e28d6b8f337)
+        ;
+
+        
+    
+    
+            circle_marker_f37f9c110d2b87246c1f12d38bf30aeb.bindTooltip(
+                `<div>
+                     City: Kauhava, Location: Yhteisporsas Jakkula pellettilämpö, Total: 409
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00435d8dae50b8454c1a4d938d75a76f = L.circleMarker(
+                [59.82834889999999, 22.9658712],
+                {"bubblingMouseEvents": true, "color": "#005e44ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#005e44ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.763454907160195, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_5dc72b570ae04aae852a91ee6c37f63b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39240b60476776b69ad392aadd2ee93f = $(`<div id="html_39240b60476776b69ad392aadd2ee93f" style="width: 100.0%; height: 100.0%;"><b>City:</b> Hanko<br><b>Location:</b> Ruukki Hanko pellettilämpö<br><b>Annual:</b> 381 tn.</div>`)[0];
+                popup_5dc72b570ae04aae852a91ee6c37f63b.setContent(html_39240b60476776b69ad392aadd2ee93f);
+            
+        
+
+        circle_marker_00435d8dae50b8454c1a4d938d75a76f.bindPopup(popup_5dc72b570ae04aae852a91ee6c37f63b)
+        ;
+
+        
+    
+    
+            circle_marker_00435d8dae50b8454c1a4d938d75a76f.bindTooltip(
+                `<div>
+                     City: Hanko, Location: Ruukki Hanko pellettilämpö, Total: 381
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20160e9ef7b758bb58bb9de0eac34be3 = L.circleMarker(
+                [60.59900219999999, 22.0825053],
+                {"bubblingMouseEvents": true, "color": "#098500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#098500ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.123732399163437, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_512b45a71264387290c5e1bf983e2f48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8a6a9b5c7a0e853dfc44089a4f833aa = $(`<div id="html_f8a6a9b5c7a0e853dfc44089a4f833aa" style="width: 100.0%; height: 100.0%;"><b>City:</b> Nousiainen<br><b>Location:</b> Nousiainen pellettilämpö<br><b>Annual:</b> 524 tn.</div>`)[0];
+                popup_512b45a71264387290c5e1bf983e2f48.setContent(html_f8a6a9b5c7a0e853dfc44089a4f833aa);
+            
+        
+
+        circle_marker_20160e9ef7b758bb58bb9de0eac34be3.bindPopup(popup_512b45a71264387290c5e1bf983e2f48)
+        ;
+
+        
+    
+    
+            circle_marker_20160e9ef7b758bb58bb9de0eac34be3.bindTooltip(
+                `<div>
+                     City: Nousiainen, Location: Nousiainen pellettilämpö, Total: 524
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9262bed3226435909356a4026a4cb3a = L.circleMarker(
+                [63.0152036, 28.2048736],
+                {"bubblingMouseEvents": true, "color": "#002ba9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002ba9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.849871794028882, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_a92e083d28ae0f394de55f0281a7abdb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a98665201af5df15875a5e8e2258ee49 = $(`<div id="html_a98665201af5df15875a5e8e2258ee49" style="width: 100.0%; height: 100.0%;"><b>City:</b> Kuopio<br><b>Location:</b> Muuruvesi opisto pellettilämpö<br><b>Annual:</b> 194 tn.</div>`)[0];
+                popup_a92e083d28ae0f394de55f0281a7abdb.setContent(html_a98665201af5df15875a5e8e2258ee49);
+            
+        
+
+        circle_marker_f9262bed3226435909356a4026a4cb3a.bindPopup(popup_a92e083d28ae0f394de55f0281a7abdb)
+        ;
+
+        
+    
+    
+            circle_marker_f9262bed3226435909356a4026a4cb3a.bindTooltip(
+                `<div>
+                     City: Kuopio, Location: Muuruvesi opisto pellettilämpö, Total: 194
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd809848d6b6638baa3c7d2c3aad4c3b = L.circleMarker(
+                [60.2401957, 23.7178592],
+                {"bubblingMouseEvents": true, "color": "#002ba9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002ba9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.849871794028882, "stroke": true, "weight": 3}
+            ).addTo(map_38251a85d80acabf8077b94cd83b5c32);
+        
+    
+        var popup_0627c1f1a96cb07e24b442117c7bc121 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3b6b4231e6978be83b9c00069a9037b = $(`<div id="html_f3b6b4231e6978be83b9c00069a9037b" style="width: 100.0%; height: 100.0%;"><b>City:</b> Karjalohja<br><b>Location:</b> Karjalohja pellettilämpö<br><b>Annual:</b> 194 tn.</div>`)[0];
+                popup_0627c1f1a96cb07e24b442117c7bc121.setContent(html_f3b6b4231e6978be83b9c00069a9037b);
+            
+        
+
+        circle_marker_fd809848d6b6638baa3c7d2c3aad4c3b.bindPopup(popup_0627c1f1a96cb07e24b442117c7bc121)
+        ;
+
+        
+    
+    
+            circle_marker_fd809848d6b6638baa3c7d2c3aad4c3b.bindTooltip(
+                `<div>
+                     City: Karjalohja, Location: Karjalohja pellettilämpö, Total: 194
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_1952b28021dc8491a14c9dd9c085417d = {};
+
+    
+    color_map_1952b28021dc8491a14c9dd9c085417d.color = d3.scale.threshold()
+              .domain([34.0, 37.793587174348694, 41.587174348697395, 45.38076152304609, 49.17434869739479, 52.96793587174349, 56.76152304609218, 60.55511022044088, 64.34869739478958, 68.14228456913827, 71.93587174348698, 75.72945891783567, 79.52304609218436, 83.31663326653307, 87.11022044088176, 90.90380761523046, 94.69739478957916, 98.49098196392785, 102.28456913827655, 106.07815631262525, 109.87174348697395, 113.66533066132264, 117.45891783567134, 121.25250501002004, 125.04609218436873, 128.83967935871743, 132.63326653306615, 136.42685370741484, 140.22044088176352, 144.01402805611224, 147.80761523046093, 151.6012024048096, 155.39478957915833, 159.18837675350701, 162.9819639278557, 166.77555110220442, 170.5691382765531, 174.3627254509018, 178.1563126252505, 181.9498997995992, 185.7434869739479, 189.5370741482966, 193.33066132264528, 197.124248496994, 200.9178356713427, 204.71142284569137, 208.5050100200401, 212.29859719438878, 216.09218436873746, 219.88577154308618, 223.67935871743487, 227.47294589178355, 231.26653306613227, 235.06012024048096, 238.85370741482967, 242.64729458917836, 246.44088176352705, 250.23446893787576, 254.02805611222445, 257.82164328657313, 261.61523046092185, 265.40881763527057, 269.2024048096192, 272.99599198396794, 276.78957915831666, 280.5831663326653, 284.37675350701403, 288.17034068136275, 291.9639278557114, 295.7575150300601, 299.55110220440883, 303.3446893787575, 307.1382765531062, 310.9318637274549, 314.7254509018036, 318.5190380761523, 322.312625250501, 326.1062124248497, 329.8997995991984, 333.6933867735471, 337.4869739478958, 341.2805611222445, 345.0741482965932, 348.8677354709419, 352.66132264529057, 356.4549098196393, 360.248496993988, 364.04208416833666, 367.8356713426854, 371.6292585170341, 375.42284569138275, 379.21643286573146, 383.0100200400802, 386.80360721442884, 390.59719438877755, 394.39078156312627, 398.1843687374749, 401.97795591182364, 405.77154308617236, 409.565130260521, 413.35871743486973, 417.15230460921845, 420.9458917835671, 424.7394789579158, 428.53306613226454, 432.32665330661325, 436.1202404809619, 439.9138276553106, 443.70741482965934, 447.501002004008, 451.2945891783567, 455.08817635270543, 458.8817635270541, 462.6753507014028, 466.4689378757515, 470.2625250501002, 474.0561122244489, 477.8496993987976, 481.64328657314627, 485.436873747495, 489.2304609218437, 493.02404809619236, 496.8176352705411, 500.6112224448898, 504.40480961923845, 508.19839679358716, 511.9919839679359, 515.7855711422847, 519.5791583166333, 523.372745490982, 527.1663326653306, 530.9599198396793, 534.7535070140281, 538.5470941883768, 542.3406813627255, 546.1342685370741, 549.9278557114228, 553.7214428857716, 557.5150300601202, 561.3086172344689, 565.1022044088177, 568.8957915831663, 572.689378757515, 576.4829659318638, 580.2765531062124, 584.0701402805611, 587.8637274549098, 591.6573146292585, 595.4509018036072, 599.2444889779559, 603.0380761523046, 606.8316633266533, 610.625250501002, 614.4188376753507, 618.2124248496993, 622.0060120240481, 625.7995991983968, 629.5931863727454, 633.3867735470942, 637.1803607214429, 640.9739478957916, 644.7675350701403, 648.561122244489, 652.3547094188377, 656.1482965931864, 659.941883767535, 663.7354709418838, 667.5290581162325, 671.3226452905811, 675.1162324649299, 678.9098196392786, 682.7034068136272, 686.496993987976, 690.2905811623247, 694.0841683366733, 697.8777555110221, 701.6713426853707, 705.4649298597194, 709.2585170340682, 713.0521042084168, 716.8456913827655, 720.6392785571143, 724.4328657314629, 728.2264529058116, 732.0200400801604, 735.813627254509, 739.6072144288577, 743.4008016032064, 747.1943887775551, 750.9879759519038, 754.7815631262525, 758.5751503006012, 762.3687374749499, 766.1623246492986, 769.9559118236473, 773.7494989979959, 777.5430861723447, 781.3366733466934, 785.130260521042, 788.9238476953908, 792.7174348697395, 796.5110220440881, 800.3046092184369, 804.0981963927856, 807.8917835671342, 811.685370741483, 815.4789579158316, 819.2725450901804, 823.0661322645291, 826.8597194388777, 830.6533066132265, 834.4468937875752, 838.2404809619238, 842.0340681362726, 845.8276553106213, 849.6212424849699, 853.4148296593187, 857.2084168336673, 861.002004008016, 864.7955911823648, 868.5891783567134, 872.3827655310621, 876.1763527054109, 879.9699398797595, 883.7635270541082, 887.557114228457, 891.3507014028056, 895.1442885771543, 898.937875751503, 902.7314629258517, 906.5250501002004, 910.3186372745491, 914.1122244488978, 917.9058116232464, 921.6993987975952, 925.4929859719439, 929.2865731462925, 933.0801603206413, 936.87374749499, 940.6673346693386, 944.4609218436874, 948.2545090180361, 952.0480961923847, 955.8416833667335, 959.6352705410821, 963.4288577154308, 967.2224448897796, 971.0160320641282, 974.8096192384769, 978.6032064128257, 982.3967935871743, 986.1903807615231, 989.9839679358718, 993.7775551102204, 997.5711422845692, 1001.3647294589179, 1005.1583166332665, 1008.9519038076153, 1012.7454909819639, 1016.5390781563126, 1020.3326653306614, 1024.1262525050101, 1027.9198396793586, 1031.7134268537075, 1035.5070140280561, 1039.3006012024048, 1043.0941883767537, 1046.887775551102, 1050.681362725451, 1054.4749498997996, 1058.2685370741483, 1062.062124248497, 1065.8557114228456, 1069.6492985971945, 1073.4428857715432, 1077.2364729458918, 1081.0300601202405, 1084.8236472945891, 1088.6172344689378, 1092.4108216432867, 1096.2044088176353, 1099.997995991984, 1103.7915831663327, 1107.5851703406813, 1111.37875751503, 1115.1723446893789, 1118.9659318637275, 1122.7595190380762, 1126.5531062124248, 1130.3466933867735, 1134.1402805611222, 1137.933867735471, 1141.7274549098197, 1145.5210420841684, 1149.314629258517, 1153.1082164328657, 1156.9018036072143, 1160.6953907815632, 1164.4889779559119, 1168.2825651302605, 1172.0761523046092, 1175.8697394789579, 1179.6633266533065, 1183.4569138276554, 1187.250501002004, 1191.0440881763527, 1194.8376753507014, 1198.63126252505, 1202.4248496993987, 1206.2184368737476, 1210.0120240480962, 1213.805611222445, 1217.5991983967936, 1221.3927855711422, 1225.1863727454909, 1228.9799599198398, 1232.7735470941884, 1236.567134268537, 1240.3607214428857, 1244.1543086172344, 1247.9478957915833, 1251.741482965932, 1255.5350701402806, 1259.3286573146293, 1263.122244488978, 1266.9158316633266, 1270.7094188376755, 1274.5030060120241, 1278.2965931863728, 1282.0901803607214, 1285.88376753507, 1289.6773547094188, 1293.4709418837676, 1297.2645290581163, 1301.058116232465, 1304.8517034068136, 1308.6452905811623, 1312.438877755511, 1316.2324649298598, 1320.0260521042085, 1323.8196392785571, 1327.6132264529058, 1331.4068136272545, 1335.200400801603, 1338.993987975952, 1342.7875751503007, 1346.5811623246493, 1350.374749498998, 1354.1683366733466, 1357.9619238476953, 1361.7555110220442, 1365.5490981963928, 1369.3426853707415, 1373.1362725450902, 1376.9298597194388, 1380.7234468937875, 1384.5170340681364, 1388.310621242485, 1392.1042084168337, 1395.8977955911823, 1399.691382765531, 1403.4849699398796, 1407.2785571142285, 1411.0721442885772, 1414.8657314629259, 1418.6593186372745, 1422.4529058116232, 1426.246492985972, 1430.0400801603207, 1433.8336673346694, 1437.627254509018, 1441.4208416833667, 1445.2144288577153, 1449.0080160320642, 1452.801603206413, 1456.5951903807616, 1460.3887775551102, 1464.1823647294589, 1467.9759519038075, 1471.7695390781564, 1475.563126252505, 1479.3567134268537, 1483.1503006012024, 1486.943887775551, 1490.7374749498997, 1494.5310621242486, 1498.3246492985973, 1502.118236472946, 1505.9118236472946, 1509.7054108216432, 1513.4989979959919, 1517.2925851703408, 1521.0861723446894, 1524.879759519038, 1528.6733466933867, 1532.4669338677354, 1536.260521042084, 1540.054108216433, 1543.8476953907816, 1547.6412825651303, 1551.434869739479, 1555.2284569138276, 1559.0220440881762, 1562.8156312625251, 1566.6092184368738, 1570.4028056112224, 1574.196392785571, 1577.9899799599198, 1581.7835671342684, 1585.5771543086173, 1589.370741482966, 1593.1643286573146, 1596.9579158316633, 1600.751503006012, 1604.5450901803608, 1608.3386773547095, 1612.1322645290581, 1615.9258517034068, 1619.7194388777555, 1623.5130260521041, 1627.306613226453, 1631.1002004008017, 1634.8937875751503, 1638.687374749499, 1642.4809619238476, 1646.2745490981963, 1650.0681362725452, 1653.8617234468938, 1657.6553106212425, 1661.4488977955912, 1665.2424849699398, 1669.0360721442885, 1672.8296593186374, 1676.623246492986, 1680.4168336673347, 1684.2104208416833, 1688.004008016032, 1691.7975951903807, 1695.5911823647295, 1699.3847695390782, 1703.1783567134269, 1706.9719438877755, 1710.7655310621242, 1714.5591182364728, 1718.3527054108217, 1722.1462925851704, 1725.939879759519, 1729.7334669338677, 1733.5270541082164, 1737.320641282565, 1741.114228456914, 1744.9078156312626, 1748.7014028056112, 1752.4949899799599, 1756.2885771543085, 1760.0821643286574, 1763.875751503006, 1767.6693386773547, 1771.4629258517034, 1775.256513026052, 1779.0501002004007, 1782.8436873747496, 1786.6372745490983, 1790.430861723447, 1794.2244488977956, 1798.0180360721442, 1801.811623246493, 1805.6052104208418, 1809.3987975951904, 1813.192384769539, 1816.9859719438878, 1820.7795591182364, 1824.573146292585, 1828.366733466934, 1832.1603206412826, 1835.9539078156313, 1839.74749498998, 1843.5410821643286, 1847.3346693386773, 1851.1282565130261, 1854.9218436873748, 1858.7154308617235, 1862.5090180360721, 1866.3026052104208, 1870.0961923847694, 1873.8897795591183, 1877.683366733467, 1881.4769539078156, 1885.2705410821643, 1889.064128256513, 1892.8577154308616, 1896.6513026052105, 1900.4448897795592, 1904.2384769539078, 1908.0320641282565, 1911.8256513026051, 1915.6192384769538, 1919.4128256513027, 1923.2064128256513, 1927.0])
+              .range(['#0000ffff', '#0001fdff', '#0002fbff', '#0003f9ff', '#0004f7ff', '#0005f5ff', '#0006f3ff', '#0007f1ff', '#0008efff', '#0009edff', '#000aebff', '#000be9ff', '#000ce7ff', '#000de5ff', '#000ee3ff', '#000fe1ff', '#0010dfff', '#0011ddff', '#0012dbff', '#0013d9ff', '#0014d6ff', '#0015d4ff', '#0016d2ff', '#0017d0ff', '#0018ceff', '#0019ccff', '#001acaff', '#001bc8ff', '#001cc6ff', '#001dc4ff', '#001ec2ff', '#001fc0ff', '#0020beff', '#0021bcff', '#0023baff', '#0024b8ff', '#0025b6ff', '#0026b4ff', '#0027b2ff', '#0028afff', '#0029adff', '#002aabff', '#002ba9ff', '#002ca7ff', '#002da5ff', '#002ea3ff', '#002fa1ff', '#00309fff', '#00319dff', '#00329bff', '#003399ff', '#003497ff', '#003595ff', '#003693ff', '#003791ff', '#00388fff', '#00398dff', '#003a8bff', '#003b88ff', '#003c86ff', '#003d84ff', '#003e82ff', '#003f80ff', '#00407eff', '#00417cff', '#00427aff', '#004378ff', '#004576ff', '#004674ff', '#004772ff', '#004870ff', '#00496eff', '#004a6cff', '#004b6aff', '#004c68ff', '#004d66ff', '#004e64ff', '#004f61ff', '#00505fff', '#00515dff', '#00525bff', '#005359ff', '#005457ff', '#005555ff', '#005653ff', '#005751ff', '#00584fff', '#00594dff', '#005a4bff', '#005b49ff', '#005c47ff', '#005d45ff', '#005e43ff', '#005f41ff', '#00603fff', '#00613dff', '#00623aff', '#006338ff', '#006436ff', '#006534ff', '#006732ff', '#006830ff', '#00692eff', '#006a2cff', '#006b2aff', '#006c28ff', '#006d26ff', '#006e24ff', '#006f22ff', '#007020ff', '#00711eff', '#00721cff', '#00731aff', '#007418ff', '#007516ff', '#007614ff', '#007711ff', '#00780fff', '#00790dff', '#007a0bff', '#007b09ff', '#007c07ff', '#007d05ff', '#007e03ff', '#007f01ff', '#008000ff', '#028100ff', '#048200ff', '#068300ff', '#088400ff', '#0a8500ff', '#0c8600ff', '#0e8700ff', '#108800ff', '#128900ff', '#158a00ff', '#178b00ff', '#198d00ff', '#1b8e00ff', '#1d8f00ff', '#1f9000ff', '#219100ff', '#239200ff', '#259300ff', '#279400ff', '#299500ff', '#2b9600ff', '#2d9700ff', '#2f9800ff', '#319900ff', '#339a00ff', '#359b00ff', '#379c00ff', '#399d00ff', '#3c9e00ff', '#3e9f00ff', '#40a000ff', '#42a100ff', '#44a200ff', '#46a300ff', '#48a400ff', '#4aa500ff', '#4ca600ff', '#4ea700ff', '#50a800ff', '#52a900ff', '#54aa00ff', '#56ab00ff', '#58ac00ff', '#5aad00ff', '#5cae00ff', '#5eaf00ff', '#60b000ff', '#63b100ff', '#65b200ff', '#67b300ff', '#69b400ff', '#6bb500ff', '#6db600ff', '#6fb700ff', '#71b800ff', '#73b900ff', '#75bb00ff', '#77bc00ff', '#79bd00ff', '#7bbe00ff', '#7dbf00ff', '#7fc000ff', '#81c100ff', '#83c200ff', '#85c300ff', '#87c400ff', '#8ac500ff', '#8cc600ff', '#8ec700ff', '#90c800ff', '#92c900ff', '#94ca00ff', '#96cb00ff', '#98cc00ff', '#9acd00ff', '#9cce00ff', '#9ecf00ff', '#a0d000ff', '#a2d100ff', '#a4d200ff', '#a6d300ff', '#a8d400ff', '#aad500ff', '#acd600ff', '#aed700ff', '#b0d800ff', '#b3d900ff', '#b5da00ff', '#b7db00ff', '#b9dc00ff', '#bbdd00ff', '#bdde00ff', '#bfdf00ff', '#c1e000ff', '#c3e100ff', '#c5e200ff', '#c7e300ff', '#c9e400ff', '#cbe500ff', '#cde600ff', '#cfe700ff', '#d1e900ff', '#d3ea00ff', '#d5eb00ff', '#d7ec00ff', '#daed00ff', '#dcee00ff', '#deef00ff', '#e0f000ff', '#e2f100ff', '#e4f200ff', '#e6f300ff', '#e8f400ff', '#eaf500ff', '#ecf600ff', '#eef700ff', '#f0f800ff', '#f2f900ff', '#f4fa00ff', '#f6fb00ff', '#f8fc00ff', '#fafd00ff', '#fcfe00ff', '#feff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff200ff', '#fff100ff', '#fff100ff', '#fff000ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe500ff', '#ffe400ff', '#ffe400ff', '#ffe300ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc000ff', '#ffbf00ff', '#ffbf00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb300ff', '#ffb200ff', '#ffb200ff', '#ffb100ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5000ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff']);
+    
+
+    color_map_1952b28021dc8491a14c9dd9c085417d.x = d3.scale.linear()
+              .domain([34.0, 1927.0])
+              .range([0, 450 - 50]);
+
+    color_map_1952b28021dc8491a14c9dd9c085417d.legend = L.control({position: 'topright'});
+    color_map_1952b28021dc8491a14c9dd9c085417d.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_1952b28021dc8491a14c9dd9c085417d.legend.addTo(map_38251a85d80acabf8077b94cd83b5c32);
+
+    color_map_1952b28021dc8491a14c9dd9c085417d.xAxis = d3.svg.axis()
+        .scale(color_map_1952b28021dc8491a14c9dd9c085417d.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([34.0, 507.25, 980.5, 1453.75, 1927.0]);
+
+    color_map_1952b28021dc8491a14c9dd9c085417d.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_1952b28021dc8491a14c9dd9c085417d.g = color_map_1952b28021dc8491a14c9dd9c085417d.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_1952b28021dc8491a14c9dd9c085417d.g.selectAll("rect")
+        .data(color_map_1952b28021dc8491a14c9dd9c085417d.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_1952b28021dc8491a14c9dd9c085417d.x(color_map_1952b28021dc8491a14c9dd9c085417d.color.domain()[i - 1]) : color_map_1952b28021dc8491a14c9dd9c085417d.x.range()[0],
+            x1: i < color_map_1952b28021dc8491a14c9dd9c085417d.color.domain().length ? color_map_1952b28021dc8491a14c9dd9c085417d.x(color_map_1952b28021dc8491a14c9dd9c085417d.color.domain()[i]) : color_map_1952b28021dc8491a14c9dd9c085417d.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_1952b28021dc8491a14c9dd9c085417d.g.call(color_map_1952b28021dc8491a14c9dd9c085417d.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Annual Wood Pellet Consumption in tonnes.  myynti@vpglobal.fi \u00a9 2025 VP Global Oy");
+</script>
+</html>
